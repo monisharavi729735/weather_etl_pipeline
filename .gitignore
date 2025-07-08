@@ -1,53 +1,22 @@
-# Python cache and logs
+# Byte-compiled files
 __pycache__/
 *.py[cod]
-*.log
 
-# Jupyter/IPython files (if any)
-.ipynb_checkpoints/
+# Env files
+.env
 
-# macOS metadata files
+# SQLite backup files (you may want to include the main DB!)
+*.sqlite3
+*.db-journal
+
+# Airflow logs
+logs/
+airflow_logs/
+dags/__pycache__/
+
+# System files
 .DS_Store
 
 # Virtual environments
-venv/
-.env/
-.envrc
-*.env
-
-# SQLite database files
-*.db
-
-# Airflow logs and config
-airflow.cfg
-airflow.db
-logs/
-*.pid
-
-# Docker volumes and images (if persisted locally)
-docker-compose.override.yml
-*.tar
-
-# Streamlit specific
-.streamlit/secrets.toml
-.streamlit/config.toml
-
-# VSCode settings (if using VSCode)
-.vscode/
-
-# PyCharm settings (if using JetBrains IDE)
-.idea/
-
-# Airflow compiled Python files
-dags/__pycache__/
-
-# Ignore output files
-*.out
-*.bak
-*.swp
-
-# Ignore Airflow .mypy_cache (type checking)
-.mypy_cache/
-
-# Ignore your airflow-init container temporary folders
-tmp/
+.venv/
+env/
