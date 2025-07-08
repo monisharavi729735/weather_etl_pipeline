@@ -8,8 +8,7 @@ st.title("🌦️ Weather Dashboard")
 st.write("Latest weather readings from OpenWeatherMap API (Bangalore)")
 
 # Load from DB
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(BASE_DIR, "..", "data", "weather_data.db")
+db_path = os.path.join("data", "weather_data.db")
 
 print(f"Trying to connect to DB at: {db_path}")
 conn = sqlite3.connect(db_path)
