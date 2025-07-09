@@ -32,3 +32,7 @@ Orchestrates daily ETL jobs:
 - **Streamlit** (for web dashboard)
 - **Docker + Docker Compose** (for reproducible environment)
 - **OpenWeatherMap API** (data source)
+
+---
+
+Note : Data updates are pushed manually from the local Airflow DAG. In a production setup, this would be automated via a secure Git push or cloud-based storage.
